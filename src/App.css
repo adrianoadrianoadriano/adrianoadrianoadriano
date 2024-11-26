@@ -1,38 +1,70 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  position: relative; /* Necessario per posizionare i ghirigori */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+  position: relative; /* Necessario per i ghirigori */
+  padding: 50px; /* Aggiunta di padding per il titolo */
+  
 }
 
-.App-link {
-  color: #61dafb;
+.App-header {
+  position: relative; /* Ensure that pseudo-elements are positioned correctly */
+  padding: 5px;
+  background-color: rgb(144, 56, 56);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-header::before,
+.App-header::after {
+  content: '';
+  position: absolute;
+  left: 50%; /* Center it horizontally */
+  width: 100%; /* Full width for each line */
+  z-index: -1; /* Behind the content */
+  background-color: rgba(255, 215, 0, 0.8); /* Color for the lines */
+}
+
+/* Top decorative lines */
+.App-header::before {
+  top: -20%; /* Position it above the header */
+  height: 10px; /* Initial height of the line */
+  transform: translateX(-50%);
+}
+
+/* Add multiple lines with different heights */
+.App-header::before {
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.8), 
+              0 -3px 0 1px rgba(255, 215, 0, 0.6), 
+              0 -6px 0 1px rgba(255, 215, 0, 0.4), 
+              0 -9px 0 1px rgba(255, 215, 0, 0.2);
+}
+
+/* Bottom decorative lines */
+.App-header::after {
+  bottom: -20%; /* Position it below the header */
+  height: 10px; /* Initial height of the line */
+  transform: translateX(-50%);
+}
+
+.App-header::after {
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.8), 
+              0 3px 0 1px rgba(255, 215, 0, 0.6), 
+              0 6px 0 1px rgba(255, 215, 0, 0.4), 
+              0 9px 0 1px rgba(255, 215, 0, 0.2);
+}
+
+
+.App-header::after {
+  transform: translate(-50%, -50%) translateY(100%); /* Move it down for the bottom line */
+}
+
+
+.App-header::before {
+  transform: translate(-50%, -50%) scale(1.1); /* Scala per il primo ghirigoro */
+}
+
+.App-header::after {
+  transform: translate(-50%, -50%) scale(1.2); /* Scala per il secondo ghirigoro */
 }

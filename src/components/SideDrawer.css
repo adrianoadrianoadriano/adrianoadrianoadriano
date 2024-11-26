@@ -1,0 +1,110 @@
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.login-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.login-popup-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.switch-to-register-btn, .switch-to-login-btn {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.google-login-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.google-login-btn:hover {
+  background-color: #357ae8;
+}
+
+.close-popup-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.cart-toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.cart-toggle-btn:hover {
+  background-color: #0056b3;
+}
+
+.cart-section {
+  margin-top: 20px;
+}

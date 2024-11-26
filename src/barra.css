@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+.navbar {
+  background-color: #000; /* Background color of the navbar */
+  padding: 20px; /* Padding for the navbar */
+  width: 100%;
+  height: 50px; /* Reduced height to shorten the navbar */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-radius: 5%;/* Rounded corners */
+  box-shadow: 0 4px 100px rgb(255, 0, 0); /* Adds a shadow below the navbar */
+}
+.navbar-brand {
+    font-size: 50px;
+    color: #a01e1e; /* Colore del testo */
+    cursor: pointer;
+    margin-left: 30px;
+    transition: text-shadow 0.5s ease; /* Transizione per l'ombreggiatura */
+    font-family: 'Coiny', cursive; /* Font corretto */
+    font-weight: bold; /* Rendi il testo in grassetto */
+}
+
+/* Effetto hover */
+.navbar-brand:hover {
+  text-shadow: 0 0 5px rgba(255, 215, 0, 1), /* Ombra principale */
+               0 0 10px rgba(255, 215, 0, 0.5), /* Ombra secondaria */
+               0 0 15px rgba(255, 215, 0, 0.2); /* Ombra terziaria */
+}
+.navbar-nav {
+  list-style: none;
+  margin: 50;
+  padding: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav a {
+  color: #ffffff;
+  font-size: 30px;
+  text-decoration: wavy;
+  margin-left:0 ; /* Sposto l'elemento leggermente a destra */
+  margin-right: 30%;
+  transition: color 0.2s ease;
+}
+
+.navbar-nav a:hover {
+  color: #ffd700; /* Colore oro */
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* Effetto di brilantezza oro */
+}
+
+.navbar-nav a:hover {
+  color: #ccc;
+}
+
+.cart-icon {
+  cursor: pointer;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon i {
+  font-size: 24px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.cart-count {
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 16px;
+}
