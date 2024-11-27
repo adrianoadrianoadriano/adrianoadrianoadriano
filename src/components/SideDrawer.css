@@ -1,3 +1,14 @@
+/* Variabili per riuso */
+:root {
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --secondary-bg: #4285f4;
+  --secondary-hover: #357ae8;
+  --text-color: #333;
+  --border-radius: 5px;
+  --padding: 10px;
+}
+
 .side-drawer {
   position: fixed;
   top: 0;
@@ -11,22 +22,30 @@
   flex-direction: column;
   padding: 20px;
   overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
 }
 
-.close-btn {
-  align-self: flex-end;
+.side-drawer.open {
+  transform: translateX(0);
+}
+
+.close-btn,
+.close-popup-btn {
   background: none;
   border: none;
   font-size: 20px;
+  color: var(--text-color);
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .login-popup {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -45,64 +64,63 @@
 
 input {
   margin: 10px 0;
-  padding: 10px;
+  padding: var(--padding);
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 button {
   margin-top: 10px;
-  padding: 10px;
+  padding: var(--padding);
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
+  border-radius: var(--border-radius);
+  background-color: var(--primary-color);
   color: white;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover);
 }
 
-.switch-to-register-btn, .switch-to-login-btn {
+.switch-to-register-btn,
+.switch-to-login-btn,
+.google-login-btn {
   background-color: transparent;
-  color: #007bff;
   border: none;
+  color: var(--primary-color);
   cursor: pointer;
   text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+.switch-to-register-btn:hover,
+.switch-to-login-btn:hover {
+  color: var(--primary-hover);
 }
 
 .google-login-btn {
-  background-color: #4285f4;
+  background-color: var(--secondary-bg);
   color: white;
-  border: none;
-  cursor: pointer;
 }
 
 .google-login-btn:hover {
-  background-color: #357ae8;
-}
-
-.close-popup-btn {
-  background: none;
-  border: none;
-  font-size: 20px;
-  color: #333;
-  cursor: pointer;
-  align-self: flex-end;
+  background-color: var(--secondary-hover);
 }
 
 .cart-toggle-btn {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 10px;
+  padding: var(--padding);
   margin-top: 10px;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .cart-toggle-btn:hover {
-  background-color: #0056b3;
+  background-color: var(--primary-hover);
 }
 
 .cart-section {
