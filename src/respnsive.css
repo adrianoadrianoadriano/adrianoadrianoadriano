@@ -1,0 +1,147 @@
+/* Reset e Base Globali */
+:root {
+    /* Mantengo le variabili esistenti di productcard.css */
+    --color-primary: #922818;
+    --color-primary-light: rgba(245, 100, 100, 0.8);
+    --color-background: #dceaa5;
+    --color-text: #333;
+    
+    /* Nuove variabili per responsive e touch */
+    --breakpoint-mobile: 600px;
+    --breakpoint-tablet: 1024px;
+    --touch-target-size: 44px;
+    --touch-spacing: 8px;
+  }
+  
+  /* Integrazione App.css */
+  .App {
+    background-color: rgb(198, 169, 67);
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    
+    /* Background damascato originale */
+    background:
+      repeating-radial-gradient(circle, transparent, transparent 3.5em, rgb(131, 43, 27) 4.8em, rgb(131, 43, 27) 4.5em),
+      repeating-radial-gradient(circle, transparent, transparent 3.5em, rgb(0, 0, 0) 3.5em, rgb(5, 10, 15) 4.3em),
+      repeating-radial-gradient(circle, transparent, transparent 2.7em,  rgb(131, 43, 27) 3.5em, rgb(194, 71, 49) 4.5em),
+      repeating-radial-gradient(circle, transparent, transparent 2.7em, rgb(185, 162, 32) 2.5em, rgb(196, 173, 41) 3.5em),
+      rgba(0, 0, 0, 0.227);
+  
+    background-blend-mode: multiply;
+    background-size: 10em 10em;
+    background-attachment: fixed;
+    
+    /* Nuove ottimizzazioni responsive */
+    @media (max-width: 1024px) {
+      background-size: 10em 10em;
+    }
+    
+    @media (max-width: 768px) {
+      background-size: 10em 10em;
+    }
+  }
+  
+  /* Miglioramento touch e performance globale */
+  * {
+    -webkit-tap-highlight-color: #92281800;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive Typography */
+  html {
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+  /* Mantengo gli stili originali di productcard.css con miglioramenti */
+  .product-card {
+    position: relative;
+    width: 200px;
+    padding: 16px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    
+    /* Touch optimization */
+    min-height: var(--touch-target-size);
+    touch-action: manipulation;
+    
+    /* Background pattern originale */
+    background: 
+      conic-gradient(at 25% 25%, transparent 75%, var(--pattern-color-1) 0),
+      conic-gradient(transparent 75%, var(--pattern-color-2) 0) calc(var(--pattern-size) / -8) calc(5 * var(--pattern-size) / 8),
+      conic-gradient(at 25% 75%, var(--pattern-color-1) 25%, var(--pattern-color-2) 0);
+    background-size: var(--pattern-size) var(--pattern-size);
+    background-color: var(--color-primary-light);
+    
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      width: calc(100% - 40px);
+      margin: 10px 20px;
+    }
+  }
+  
+  /* Griglia prodotti responsive */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  }
+  
+  /* Touch feedback per elementi interattivi */
+  .product-card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+  
+  /* Form elements touch enhancement */
+  select, 
+  button, 
+  input {
+    min-height: var(--touch-target-size);
+    padding: var(--touch-spacing);
+    margin: var(--touch-spacing) 0;
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .App {
+      background-color: rgb(253, 232, 183);
+      color: #f0f0f0;
+    }
+  }
+  
+  /* Accessibilità e performance */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+  }

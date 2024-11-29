@@ -4,31 +4,41 @@
   position: relative; /* Necessario per posizionare i ghirigori */
   min-height: 100vh; /* Copertura minima: intera altezza della finestra */
   width: 100%; /* Assicura che il background copra l'intera larghezza */
-  
+
   /* Pattern damascato generato con CSS */
   background:
     repeating-radial-gradient(circle, transparent, transparent 3.5em, rgb(131, 43, 27) 3.5em, rgb(194, 71, 49) 4.5em),
     repeating-radial-gradient(circle, transparent, transparent 3.5em, rgb(0, 0, 0) 3.5em, rgb(5, 10, 15) 4.3em),
     repeating-radial-gradient(circle, transparent, transparent 2.7em, rgb(185, 162, 32) 2.5em, gold 2.5em),
     repeating-radial-gradient(circle, transparent, transparent 2.7em, rgb(185, 162, 32) 2.5em, rgb(196, 173, 41) 3.5em),
-    rgba(0, 0, 0, 0.227);
+    rgba(255, 48, 48, 0.227);
 
   background-blend-mode: multiply;
   background-size: 10em 10em;
   background-position: 0 0, 5em 5em, 10em 5em;
   background-attachment: fixed; /* Mantiene il background fisso durante lo scroll */
-  
 }
 
 .App-header {
   position: relative; /* Necessario per i ghirigori */
   padding: 5px;
-  padding-left: 45px; 
- 
+  padding-left: 45px;
   background-color: rgb(144, 56, 56);
 }
 
 /* Scala per i ghirigori */
+.App-header::before, .App-header::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
 .App-header::before {
   transform: translate(-50%, -50%) scale(1.1); /* Scala per il primo ghirigoro */
 }
@@ -36,3 +46,11 @@
 .App-header::after {
   transform: translate(-50%, -50%) scale(1.2); /* Scala per il secondo ghirigoro */
 }
+
+@media (max-width: 768px) {
+  .App {
+    background-size: 8em 8em;
+  }
+}
+
+

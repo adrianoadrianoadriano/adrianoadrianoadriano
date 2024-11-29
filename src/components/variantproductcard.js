@@ -13,7 +13,7 @@ function VariantProductCard({ product }) {
   const handleAddToCart = () => {
     if (selectedVariant) {
       const price = product.price[selectedVariant];
-      addToCart({ ...product, selectedVariant, price });
+      addToCart({ ...product, price }, selectedVariant, 'Tipo');
       alert(`Aggiunto al carrello: ${product.name}, Tipo: ${selectedVariant}`);
     } else {
       alert('Per favore seleziona un tipo.');
@@ -30,8 +30,8 @@ function VariantProductCard({ product }) {
       <img src={product.image} alt={product.name} className="product-image"  />
       <h3>{product.name}: </h3>
       <p style={{ height: '20px', lineHeight: '20px' }}>{currentPrice}</p> {/* Altezza fissa per il prezzo */}
-      <label>  
-      <span>Tipo:&nbsp;&nbsp;&nbsp;</span> 
+      <label>
+      <span>Tipo:&nbsp;&nbsp;&nbsp;</span>
         <select value={selectedVariant} onChange={handleVariantChange}>
           <option value="" disabled>
             Seleziona un tipo

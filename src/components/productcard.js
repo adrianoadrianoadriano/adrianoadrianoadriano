@@ -4,6 +4,7 @@ import './productcard.css';
 
 function ProductCard({ product }) {
   const [selectedVariant, setSelectedVariant] = useState(''); // Stato per la variante selezionata
+  const [isTouched, setIsTouched] = useState(false); // Stato per gestire il feedback visivo
   const { addToCart } = useContext(CartContext);
 
   // Gestisce il cambio di variante
@@ -15,7 +16,7 @@ function ProductCard({ product }) {
   const handleAddToCart = () => {
     if (selectedVariant) {
       const price = product.price[selectedVariant] || product.price; // Supporto per prezzi statici e varianti
-      addToCart({ ...product, selectedVariant, price });
+      addToCart({ ...product, price }, selectedVariant, product.name === 'Fazzolettone' ? 'Tipo' : 'Taglia');
       alert(`Aggiunto al carrello: ${product.name}, Variante: ${selectedVariant}`);
     } else {
       alert('Per favore seleziona una variante.');
@@ -26,11 +27,18 @@ function ProductCard({ product }) {
   const dropdownLabel = product.name === 'Fazzolettone' ? 'Seleziona un tipo' : 'Seleziona una taglia';
 
   return (
-    <div className="product-card">
+    <div
+      className={`product-card interactive-elements ${isTouched ? 'touched' : ''}`}
+      onTouchStart={() => setIsTouched(true)}
+      onTouchEnd={() => setIsTouched(false)}
+      onMouseDown={() => setIsTouched(true)}
+      onMouseUp={() => setIsTouched(false)}
+      onMouseLeave={() => setIsTouched(false)}
+    >
       <img src={product.image} alt={product.name} className="product-image" />
       <h3>{product.name}</h3>
       <p>
-        Prezzo:{' '} 
+        Prezzo:{' '}
         {selectedVariant
           ? `€${(product.price[selectedVariant] || product.price).toFixed(2)}`
           : product.price}
@@ -38,7 +46,7 @@ function ProductCard({ product }) {
 
       {product.sizes && (
         <label>
-                {product.name === 'Fazzolettone' ? (<span>Tipo:&nbsp;&nbsp;&nbsp;</span>) : 'Taglia:'}
+          {product.name === 'Fazzolettone' ? (<span>Tipo:&nbsp;&nbsp;&nbsp;</span>) : 'Taglia:'}
           <select value={selectedVariant} onChange={handleVariantChange}>
             <option value="" disabled>
               {dropdownLabel}

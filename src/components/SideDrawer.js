@@ -8,7 +8,7 @@ function SideDrawer({ isOpen, closeDrawer }) {
   const navigate = useNavigate();
   const { cartItems, increaseQuantity, decreaseQuantity, removeFromCart } = useContext(CartContext);
   const { isAuthenticated, login, register } = useAuth();
-  
+
   // Stato per il popup
   const [isLoginVisible, setIsLoginVisible] = useState(false);
   const [isRegisterMode, setIsRegisterMode] = useState(false); // Stato per la modalità di registrazione
@@ -17,6 +17,7 @@ function SideDrawer({ isOpen, closeDrawer }) {
     email: '',
     password: '',
   });
+  const [isCartVisible, setIsCartVisible] = useState(false); // Stato per la visibilità del carrello
 
   // Funzione per cambiare i valori nel form
   const handleInputChange = (e) => {
@@ -81,37 +82,39 @@ function SideDrawer({ isOpen, closeDrawer }) {
           </div>
         )}
       </div>
-      
+
       {/* Sezione del Carrello */}
       <div className="cart-section">
-        <button onClick={handleCheckout} className="cart-toggle-btn">
-          {cartItems.length === 0 ? "Carrello vuoto" : `Mostra Carrello (${cartItems.length})`}
-        </button>
-        {cartItems.length > 0 && (
-          <div className="cart-details">
-            {cartItems.map((item, index) => (
-              <div key={index} className="drawer-cart-item">
-                <img src={item.image} alt={item.name} className="drawer-item-image" />
-                <div className="drawer-item-details">
-                  <p>{item.name} - Taglia: {item.size}</p>
-                  <p>Prezzo: €{item.price}</p>
-                  <div className="drawer-item-controls">
-                    <button onClick={() => decreaseQuantity(item.id, item.size)}>-</button>
-                    <span>{item.quantity}</span>
-                    <button onClick={() => increaseQuantity(item.id, item.size)}>+</button>
-                    <button onClick={() => removeFromCart(item.id, item.size)}>Rimuovi</button>
+        <div className="cart-toggle-container">
+          <button onClick={() => setIsCartVisible(!isCartVisible)} className="cart-toggle-btn">
+            {cartItems.length === 0 ? "Carrello vuoto" : `Mostra Carrello (${cartItems.length})`}
+          </button>
+          {isCartVisible && cartItems.length > 0 && (
+            <div className="cart-details scrollable">
+              {cartItems.map((item, index) => (
+                <div key={index} className="drawer-cart-item">
+                  <img src={item.image} alt={item.name} className="drawer-item-image" />
+                  <div className="drawer-item-details">
+                    <p>{item.name} - {item.variantType}: {item.variant}</p> {/* Mostra il tipo o la taglia */}
+                    <p>Prezzo: €{item.price.toFixed(2)}</p>
+                    <div className="drawer-item-controls">
+                      <button onClick={() => decreaseQuantity(item.id, item.variant)}>-</button>
+                      <span>{item.quantity}</span>
+                      <button onClick={() => increaseQuantity(item.id, item.variant)}>+</button>
+                      <button onClick={() => removeFromCart(item.id, item.variant)}>Rimuovi</button>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-            <h3>Totale: €{total.toFixed(2)}</h3>
-          </div>
-        )}
+              ))}
+              <h3>Totale: €{total.toFixed(2)}</h3>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Popup di Login/Registrazione */}
       {isLoginVisible && (
-        <div className="login-popup">
+        <div className={`login-popup ${isLoginVisible ? 'visible' : ''}`}>
           <div className="login-popup-container">
             <button className="close-popup-btn" onClick={() => setIsLoginVisible(false)}>X</button>
             {!isRegisterMode ? (
