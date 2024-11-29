@@ -32,7 +32,7 @@ function ProductCard({ product }) {
       <p>
         Prezzo:{' '} 
         {selectedVariant
-          ? `€ ${(product.price[selectedVariant] || product.price).toFixed(2)}`
+          ? `€${(product.price[selectedVariant] || product.price).toFixed(2)}`
           : product.price}
       </p>
 
