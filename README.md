@@ -11,15 +11,17 @@
 
 <table>
 <tr>
-  4dr1an04dr1an04dr14n0
-<td width="50%">
+<td width="50%" align="center">
+
+**4dr14n04dr14n0**
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=4dr14n04dr14n0&layout=compact&theme=default)
 
 </td>
-adrianoadrianoadriano
-<td width="50%">
-adrianoadrianoadriano
+<td width="50%" align="center">
+
+**adrianoadrianoadriano**
+
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianoadrianoadriano&layout=compact&theme=default)
 
 </td>
