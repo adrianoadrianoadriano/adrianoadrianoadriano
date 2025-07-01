@@ -1,70 +1,64 @@
-# Adriano Riccardi
+Adriano Riccardi
 <div align="center">
-
-**Sviluppatore Full-Stack**
-
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
-
+Sviluppatore Full-Stack
+Mostra immagine
+Mostra immagine
+Mostra immagine
+Mostra immagine
+Mostra immagine
+<table>
+<tr>
+<td width="50%">
+Mostra immagine
+</td>
+<td width="50%">
+Mostra immagine
+</td>
+</tr>
+</table>
 </div>
 
----
-
-## 💻 Competenze Tecniche
-
+💻 Competenze Tecniche
 <details>
 <summary><b>🎨 Frontend Development</b></summary>
-
-```javascript
-const frontend = {
+javascriptconst frontend = {
   JavaScript: "ES6+ | Applicazioni moderne e interattive",
   React: "Componenti riutilizzabili | State management",
   HTML5: "Markup semantico | Accessibilità",
   CSS3: "Design responsive | Animation",
   npm: "Package management | Build automation"
 }
-```
 </details>
-
 <details>
 <summary><b>⚙️ Backend Development</b></summary>
-
-```java
-public class BackendSkills {
+javapublic class BackendSkills {
     private final String java = "Enterprise applications | Web services";
     private final String python = "Data processing | Automation | APIs";
     private final String cpp = "System programming | Algoritmi ottimizzati";
     private final String mysql = "Database design | Query optimization";
 }
-```
 </details>
 
----
+🎯 Approccio Professionale
 
-## 🎯 Approccio Professionale
+Problem-solving orientato con focus su codice pulito e manutenibile
+Full-stack experience - dall'UI/UX al database design
+Team collaboration - interfaccia efficace con stakeholder tecnici e non
 
-> **Problem-solving orientato** con focus su codice pulito e manutenibile  
-> **Full-stack experience** - dall'UI/UX al database design  
-> **Team collaboration** - interfaccia efficace con stakeholder tecnici e non
 
----
-
-## 🚀 Progetti e Collaborazioni
-
+🚀 Progetti e Collaborazioni
 <table>
 <tr>
 <td width="50%">
+Cosa cerco
 
-### Cosa cerco
-- Soluzioni tecniche innovative
-- Problem-solving creativo  
-- Team multidisciplinari
-- Progetti full-stack challenging
+Soluzioni tecniche innovative
+Problem-solving creativo
+Team multidisciplinari
+Progetti full-stack challenging
 
 </td>
+<td width="50%">
 <td width="50%">
 
 
