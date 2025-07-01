@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Adriano Riccardi
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Sviluppatore Full-Stack**
 
-## Available Scripts
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Competenze Tecniche
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details>
+<summary><b>🎨 Frontend Development</b></summary>
 
-### `npm test`
+```javascript
+const frontend = {
+  JavaScript: "ES6+ | Applicazioni moderne e interattive",
+  React: "Componenti riutilizzabili | State management",
+  HTML5: "Markup semantico | Accessibilità",
+  CSS3: "Design responsive | Animation",
+  npm: "Package management | Build automation"
+}
+```
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+<summary><b>⚙️ Backend Development</b></summary>
 
-### `npm run build`
+```java
+public class BackendSkills {
+    private final String java = "Enterprise applications | Web services";
+    private final String python = "Data processing | Automation | APIs";
+    private final String cpp = "System programming | Algoritmi ottimizzati";
+    private final String mysql = "Database design | Query optimization";
+}
+```
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 Approccio Professionale
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> **Problem-solving orientato** con focus su codice pulito e manutenibile  
+> **Full-stack experience** - dall'UI/UX al database design  
+> **Team collaboration** - interfaccia efficace con stakeholder tecnici e non
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Progetti e Collaborazioni
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<table>
+<tr>
+<td width="50%">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Cosa cerco
+- Soluzioni tecniche innovative
+- Problem-solving creativo  
+- Team multidisciplinari
+- Progetti full-stack challenging
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</td>
+<td width="50%">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Continuous learning
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+</td>
+</tr>
+</table>
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌟 Quando non programmo
 
-### Analyzing the Bundle Size
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| 🍳 **Cucina** | ♟️ **Scacchi** | 🎸 **Chitarra** |
+|:-------------:|:--------------:|:----------------:|
+|  Sperimenti culinari | Strategia pura | cerco di imparare|
 
-### Making a Progressive Web App
+| 🍷 **Wine & Cocktail** | ⚽ **Calcetto** | ✏️ **Disegno** |
+|:----------------------:|:--------------:|:---------------:|
+| Degustazioni | no fear play but free game | Fumetti & sketch |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+</div>
 
-### Advanced Configuration
+### Altri interessi
+📚 Anime & manga • 🗺️ Viaggi • 📖 Storia & arte • 🌍 Lingue straniere
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Disponibile per collaborazioni e nuove sfide**
 
-### `npm run build` fails to minify
+[![Email](https://img.shields.io/badge/-Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:adriano.riccardi@example.com)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/adriano-riccardi)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+*"Codice pulito, soluzioni creative, risultati concreti"*
+
+</div>
