@@ -18,7 +18,7 @@
 </td>
 <td width="50%">
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SECONDO_USERNAME&layout=compact&theme=default)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianoadrianoadriano)
 
 </td>
 </tr>
