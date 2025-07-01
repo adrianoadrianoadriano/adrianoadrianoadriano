@@ -1,13 +1,13 @@
 
 <div align="right">
 
-[![🇮🇹](https://img.shields.io/badge/lang-🇮🇹%20Italiano-green.svg)](#italiano) [![🇺🇸](https://img.shields.io/badge/lang-🇺🇸%20English-blue.svg)](#english)
+[![🇮🇹](https://img.shields.io/badge/lang-🇮🇹%20Italiano-green.svg)](#it) [![🇺🇸](https://img.shields.io/badge/lang-🇺🇸%20English-blue.svg)](#en)
 
 </div>
 
 ---
 
-
+## It
 
 # Adriano Riccardi
 <div align="center">
@@ -142,7 +142,7 @@ public class BackendSkills {
 
 ---
 
-
+## En
 
 # Adriano Riccardi
 <div align="center">
