@@ -12,13 +12,13 @@
 <table>
 <tr>
 <td width="50%">
-
+4dr1an04dr1an04dr14n0
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=4dr14n04dr14n0&layout=compact&theme=default)
 
 </td>
 <td width="50%">
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianoadrianoadriano)
+adrianoadrianoadriano
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianoadrianoadriano&layout=compact&theme=default)
 
 </td>
 </tr>
