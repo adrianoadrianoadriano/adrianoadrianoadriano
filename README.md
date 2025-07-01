@@ -1,4 +1,4 @@
-# Language / Lingua
+
 <div align="right">
 
 [![🇮🇹](https://img.shields.io/badge/lang-🇮🇹%20Italiano-green.svg)](#italiano) [![🇺🇸](https://img.shields.io/badge/lang-🇺🇸%20English-blue.svg)](#english)
