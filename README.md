@@ -82,7 +82,7 @@ public class BackendSkills {
 
 | 🍳 **Cucina** | ♟️ **Scacchi** | 🎸 **Chitarra** |
 |:-------------:|:--------------:|:----------------:|
-|  Sperimenti culinari | Strategia pura | cerco di imparare|
+|  Sperimenti culinari | qualche buona mossa tanti errori | cerco di imparare|
 
 | 🍷 **Wine & Cocktail** | ⚽ **Calcetto** | ✏️ **Disegno** |
 |:----------------------:|:--------------:|:---------------:|
