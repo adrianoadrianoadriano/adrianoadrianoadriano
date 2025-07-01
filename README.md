@@ -86,7 +86,7 @@ public class BackendSkills {
 
 | 🍷 **Wine & Cocktail** | ⚽ **Calcetto** | ✏️ **Disegno** |
 |:----------------------:|:--------------:|:---------------:|
-| Degustazioni | no fear play but free game | Fumetti & sketch |
+| Degustazioni | no fair play but free game | Fumetti & sketch |
 
 </div>
 
