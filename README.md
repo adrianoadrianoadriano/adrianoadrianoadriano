@@ -40,6 +40,7 @@
 ```javascript
 const frontend = {
   JavaScript: "ES6+ | Applicazioni moderne e interattive",
+  PHP,
   React: "Componenti riutilizzabili | State management",
   HTML5: "Markup semantico | Accessibilità",
   CSS3: "Design responsive | Animation",
