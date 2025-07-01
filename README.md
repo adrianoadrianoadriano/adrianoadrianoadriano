@@ -7,7 +7,7 @@
 
 ---
 
-## Italiano
+
 
 # Adriano Riccardi
 <div align="center">
@@ -142,7 +142,7 @@ public class BackendSkills {
 
 ---
 
-## English
+
 
 # Adriano Riccardi
 <div align="center">
